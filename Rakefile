@@ -5,11 +5,11 @@ require 'yard'
 require 'yard/rake/yardoc_task'
 
 Jeweler::Tasks.new do |gem|
-  gem.name        = "mongo_mapper"
-  gem.summary     = %Q{Awesome gem for modeling your domain and storing it in mongo}
-  gem.email       = "nunemaker@gmail.com"
-  gem.homepage    = "http://github.com/jnunemaker/mongomapper"
-  gem.authors     = ["John Nunemaker"]
+  gem.name        = "mongo_mapper-rails3"
+  gem.summary     = %Q{Rails3 / ActiveModel compatible fork of MongoMapper.}
+  gem.email       = "merbjedi@gmail.com"
+  gem.homepage    = "http://github.com/merbjedi/mongomapper"
+  gem.authors     = ["Mike Harris", "Paul Bowsher", "Jacques Crocker", "John Nunemaker"]
   
   gem.add_dependency('activesupport', '>= 3.0.0.beta')
   gem.add_dependency('activemodel', '>= 3.0.0.beta')

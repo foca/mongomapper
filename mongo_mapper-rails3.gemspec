@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{mongo_mapper}
-  s.version = "0.8.0"
+  s.name = %q{mongo_mapper-rails3}
+  s.version = "0.7.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["John Nunemaker"]
-  s.date = %q{2010-02-21}
+  s.authors = ["Mike Harris", "Paul Bowsher", "Jacques Crocker", "John Nunemaker"]
+  s.date = %q{2010-02-24}
   s.default_executable = %q{mmconsole}
-  s.email = %q{nunemaker@gmail.com}
+  s.email = %q{merbjedi@gmail.com}
   s.executables = ["mmconsole"]
   s.extra_rdoc_files = [
     "LICENSE",
@@ -62,7 +62,6 @@ Gem::Specification.new do |s|
      "lib/mongo_mapper/support.rb",
      "lib/mongo_mapper/support/descendant_appends.rb",
      "lib/mongo_mapper/support/find.rb",
-     "mongo_mapper.gemspec",
      "performance/read_write.rb",
      "specs.watchr",
      "test/NOTE_ON_TESTING",
@@ -112,11 +111,11 @@ Gem::Specification.new do |s|
      "test/unit/test_time_zones.rb",
      "test/unit/test_validations.rb"
   ]
-  s.homepage = %q{http://github.com/jnunemaker/mongomapper}
+  s.homepage = %q{http://github.com/merbjedi/mongomapper}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Awesome gem for modeling your domain and storing it in mongo}
+  s.rubygems_version = %q{1.3.6}
+  s.summary = %q{Rails3 / ActiveModel compatible fork of MongoMapper.}
   s.test_files = [
     "test/functional/associations/test_belongs_to_polymorphic_proxy.rb",
      "test/functional/associations/test_belongs_to_proxy.rb",
