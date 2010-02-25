@@ -4,13 +4,13 @@
 
 === To Install
 
-This project is a fork of MongoMapper that works with Rails3.  
+This project is a fork of MongoMapper that works with Rails3. To install the gem run:
+ 
+  gem install `mongo_mapper-rails3`
 
 To use with Rails3 / Bundler, add this to your Gemfile:
 
-  gem "mongo_mapper", :git => 'http://github.com/merbjedi/mongomapper.git', :branch => 'rails3'
-
-Remember to use the 'rails3' branch!
+  gem "mongo_mapper-rails3", :require => "mongo_mapper"
 
 Then run:
 
