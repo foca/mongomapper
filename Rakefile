@@ -14,7 +14,7 @@ Jeweler::Tasks.new do |gem|
   gem.add_dependency('activesupport', '>= 3.0.0.beta')
   gem.add_dependency('activemodel', '>= 3.0.0.beta')
   gem.add_dependency('bundler', '>= 0.9.7')
-  gem.add_dependency('mongo', '0.18.3')
+  gem.add_dependency('mongo', '>= 0.18.3')
   
   gem.add_development_dependency('jnunemaker-matchy', '0.4.0')
   gem.add_development_dependency('shoulda', '2.10.2')
