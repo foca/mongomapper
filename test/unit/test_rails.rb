@@ -46,6 +46,22 @@ class TestRails < Test::Unit::TestCase
       should "alias new_record? to new?" do
         @klass.new.should be_new_record
       end
+
+      should "not be persisted before saving" do
+        instance = @klass.new
+        instance.persisted?.should == false
+      end
+
+      should "be persisted after saving" do
+        instance = @klass.create
+        instance.persisted?.should == true
+      end
+
+      should "not be persisted after destroying" do
+        instance = @klass.create
+        instance.destroy
+        instance.persisted?.should == false
+      end
       
       should "be able to read key with read_attribute" do
         @klass.new(:foo => 'Bar').bar.should == 'Bar'

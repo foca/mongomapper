@@ -10,6 +10,10 @@ module MongoMapper
         def new_record?
           new?
         end
+
+        def persisted?
+          !(new? || destroyed?)
+        end
         
         def read_attribute(name)
           self[name]
