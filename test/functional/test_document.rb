@@ -839,6 +839,10 @@ class DocumentTest < Test::Unit::TestCase
     should "remove the document from the collection" do
       @document.count.should == 0
     end
+
+    should "flag it as destroyed" do
+      @doc.destroyed?.should == true
+    end
   end
   
   context "#delete" do

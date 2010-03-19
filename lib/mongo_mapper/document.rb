@@ -358,7 +358,7 @@ module MongoMapper
         
         #here for ActiveModel compatibility, should do something real with this
         def destroyed?
-          false
+          !!@deleted
         end
 
         assign_type_if_present
@@ -396,7 +396,9 @@ module MongoMapper
       end
 
       def delete
-        self.class.delete(id) unless new?
+        return if new?
+        self.class.delete(id)
+        @deleted = true
       end
 
       def reload
